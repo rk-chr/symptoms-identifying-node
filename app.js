@@ -4,7 +4,7 @@ const cors = require("cors");
 const Router = require("./SymptomAPI");
 
 const app = express();
-const port = 2018;
+const port = process.env.PORT || 2018;
 app.use(cors());
 
 // parsing the request bodys
